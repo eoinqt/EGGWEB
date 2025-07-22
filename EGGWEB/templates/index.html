@@ -105,7 +105,10 @@
                             <p class="result-description" id="qualityResult">{{quality}}%</p>
                             <ul style="margin-top: 1em;">
                                 {% for name, value in features %}
-                                    <li>- {{ name }}: {{ value }}%</li>
+                                    <p class="eggResults"> {{ name }}: {{ value }}%</p>
+                                        <div class="progressBarContainer">
+                                            <div class="progressBar" style="width: {{ value }}%;"></div> <!-- False positive error due to using jinja2 through flask -->
+                                        </div>
                                 {% endfor %}
                             </ul>
                         </div>

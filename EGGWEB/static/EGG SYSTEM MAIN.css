@@ -373,17 +373,48 @@
             padding: 16px 32px;
             border-radius: 12px;
             font-weight: bold;
-            font-size: 20px;
+            font-size: 30px;
             margin: 20px 0;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
             border: 2px solid #f59e0b;
         }
 
         .result-description {
-            font-size: 14px;
+            font-size: 40px;
+            font-weight: bold;
             opacity: 0.9;
             margin-top: 6px;
             margin-bottom: 20px;
+        }
+        .eggResults{
+            
+            font-size: 20px;
+            font-weight: bold;
+            opacity: 0.9;
+            text-align: justify;
+        }
+        .progressBarContainer{
+            width: 100%;
+            height: 10px;
+            background-color: #F1F1F1;
+            border-radius: 1.5em;
+            margin-bottom: 2px;
+        }
+        .progressBar{
+            width: 100%;
+            height: 10px;
+            background-color: #6FB2D2;
+            border-radius: 1.5em;
+            overflow: hidden;
+        }
+        .progressBar::after {
+            content: attr(data-label);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 12px;
         }
 
         .test-another-button {
